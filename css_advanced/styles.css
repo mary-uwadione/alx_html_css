@@ -1,0 +1,311 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Source Sans 3";
+}
+
+button {
+  color: white;
+  background-color: #c271ff;
+  border-radius: 22px;
+  border: none;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.hero-section {
+  background: url(media/Object.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 35.02px;
+  padding-bottom: 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 155.52px;
+}
+
+header {
+  max-width: 1009px;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: inline-flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  gap: 53px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.hero {
+  max-width: 1009px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 168px;
+}
+
+.hero-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+
+.hero-span {
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Source Sans 3";
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.experts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+}
+
+#purple-text {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.experts-row {
+  display: flex;
+  flex-direction: row;
+  gap: 139px;
+}
+.experts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experts img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.experts p {
+  text-align: center;
+}
+
+.quotes {
+  background-color: #c271ff;
+  padding: 1px;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.quotes-content {
+  display: flex;
+  flex-direction: row;
+  margin: 107px auto 123px auto;
+  max-width: 1009px;
+  gap: 53px;
+  align-items: center;
+}
+
+.quotes-text h3 {
+  font-size: 22;
+  font-weight: 700;
+  margin-top: 22px;
+}
+
+.video-list {
+  padding: 87px 0px;
+}
+
+.video-list-row {
+  max-width: 1228px;
+  display: flex;
+  margin: 75px auto 0px auto;
+  gap: 31px;
+  box-sizing: border-box;
+  padding-left: 58px;
+  padding-right: 58px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.video-control {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-card h3 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.video-card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  margin: 7px 0px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #c271ff;
+}
+
+.membership-section {
+  background-color: #071629;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  padding: 70px;
+}
+
+.membership-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.membership-column {
+  max-width: 257px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26.62px;
+}
+
+.membership-column img {
+  width: 43.67px;
+}
+
+.faq-section {
+  padding: 67px;
+}
+
+.faq-container {
+  max-width: 920px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.faq-container h2 {
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.faq-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 220px;
+  margin-top: 74px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(7, 22, 41, 0.5016);
+}
+
+.faq-left,
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 74px;
+}
+
+.faq-text h3 {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 39px;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  max-width: 1035px;
+  justify-content: space-between;
+  margin: 60px auto 70px auto;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.35;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
