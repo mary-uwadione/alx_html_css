@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "source sans pro";
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(fonts/SourceSansPro-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(fonts/SourceSansPro-Bold.otf);
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.logo img {
+  height: 32px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  align-items: center;
+}
+
+header {
+  background-image: url(media/headphones_hero_1.jpg);
+}
+
+header {
+  background-image: url(media/headphones_hero_1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 312px;
+  color: white;
+  padding: 29px 66px 115px 66px;
+}
+
+.hero-text {
+  max-width: 637px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+  padding: 11px;
+}
+
+.hero-title p {
+  font-weight: 700;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #ff6565;
+  padding: 13px 31px;
+  border-radius: 22px;
+  color: white;
+  border: none;
+}
+
+.hero-bottom {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    justify-content: center;
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: grey;
+  }
+
+  .hamburger {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    left: 21px;
+    cursor: pointer;
+    top: 9px;
+  }
+
+  .hamburger span {
+    width: 26px;
+    height: 3px;
+    background: white;
+    transition: 0.3s ease;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+  }
+  #menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11px);
+  }
+}
